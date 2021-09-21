@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина Толстых](https://up.htmlacademy.ru/htmlcss/32/user/1893989).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Зубко](https://htmlacademy.ru/profile/whatislove).
 
 ---
 
