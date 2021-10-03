@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
+    <!--Шапка-->
     <header class="page-header">
+    <!--Лого Седоны-->
     <a href="home.html">
-      <img src="#" alt ="Логотип Седоны">
+      <img class="logo-sedona" src="images/sedona-logo.svg" width="138" height="70" alt ="Логотип Седоны">
     </a>
+        <!--Навигация-->
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -43,15 +46,16 @@
     </header>
 
     <main class="main-index">
+      <!--Главная-->
       <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
       <div class="welcome">
-       <img class="logo" src="#" alt="Логотип">
-       <img class="photo" src="#" alt="Фото с горами">
-       <img src="#" alt="Разделитель">
+      
+       <img class="logo" src="images/welcome-logo.svg" width="458" height="352" alt="Логотип Добро пожаловать в Седону">
+       <img class="card-title" src="images/background-logo.jpg" width="1200" height="485" alt="Фото гор">
       </div>
         <p>Седона - небольшой городок в Аризоне, заслуживающий большего</p><br>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-
+<!--Преимущества-->
       <section class="advanteges">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -61,6 +65,7 @@
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт 
               своя жизнь</p>
           </li>
+          <img class="photo-1" src="images/photo-city.jpg" width="800" height="384" alt="Фото городка"
           <li class="advantages-item">
             <h3 class="advantages-title">Жилье</h3>
             <p class="advantages-description">Рекомендуем пожить 
@@ -83,6 +88,7 @@
           <h4 class="advantages-subtitle">— №2 —</h4>
           <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
+        <img class="photo-2" src="images/photo-bridge.jpg" width="800" height="384" alt="Фото моста дьявола"
         <li class="advantages-item">
           <h3 class="advantages-title">Небольшая
             площадь</h3>
@@ -108,24 +114,28 @@
           <img src="#" alt="Фото моста дъявола">
         </div>
       </section>
+      <!--Поиск-->
       <section class="appointment">
         <h2 class="appointment-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
       </section>
+      <!--Рассылка-->
       <section class="mailing">
         <h2 class="page-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама,
           честное бойскаутское!</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
            <p class="mailing-email">
-             <input class="field" placeholder="Ваш email" type="email" name="mailing-email" required>
+             <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email" required>
            </p>
            <button class="button mailing-button" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
+          <img class="card-background" src="images/background-matt.jpg" width="1200" height="411" alt="Изображение гор">
       </section>
     </main>
+    <!--Подвал-->
     <footer>
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>

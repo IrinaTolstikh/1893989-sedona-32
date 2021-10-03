@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
+    <!--Шапка-->
     <header class="page-header">
+      <!--Лого Седоны-->
     <a href="home.html">
-      <img src="#" alt ="Логотип Седоны">
+      <img class="logo-sedona" src="images/sedona-logo.svg" width="138" height="70" alt ="Логотип Седоны">
     </a>
+    <!--Навигация-->
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -42,6 +45,7 @@
       </nav>
     </header>
     <main class="main-inner">
+      <!--Фильтр-->
         <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -129,10 +133,9 @@
                 </fieldset>
                 <button class="button" type="submit">ПРИМЕНИТЬ</button>
                 <button class="button" type="reset">Сбросить</button>
-                <div class="photo">
-                    <img src="#" alt="Фото с горами">
-                </div>
+                    <img class="background-matt" src="images/catalog-background-matt.jpg" width="1200" height="408" alt="Фото с горами">
             </form>
+            <!--Сортировка-->
             <form class="sorting-type">
               <h3>НАЙДЕНО ГОСТИНИЦ: 38</h3>
               <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -152,9 +155,10 @@
             <a href="#" class="button">
               <span class="visually-hidden">Показать список</span>
             </a>
+            <!--Каталог-->
             <div class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="#" alt="">
+                <img class="product-card-image" src="images/catalog/amara-resort.jpg" width="180" height="120" alt="Фото отеля">
                 <h4 class="product-card-title">Amara Resort & Spa</h4>
               </a>
               <p>Гостиница</p>
@@ -168,7 +172,7 @@
             </div>
             <div class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="#" alt="">
+                <img class="product-card-image" src="images/catalog/desert-quail.jpg" width="180" height="120" alt="Фото отеля">
                 <h4 class="product-card-title">Desert Quail Inn</h4>
               </a>
               <p>Мотель</p>
@@ -182,7 +186,7 @@
             </div>
             <div class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="#" alt="">
+                <img class="product-card-image" src="images/catalog/villas-at-poco-diablo.jpg" width="180" height="120" alt="Вид из отеля">
                 <h4 class="product-card-title">Villas at Poco Diablo</h4>
               </a>
               <p>Апартаменты</p>
@@ -196,7 +200,7 @@
             </div>
             <div class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="#" alt="">
+                <img class="product-card-image" src="images/catalog/green-tree-inn.jpg" width="180" height="120" alt="Вид из отеля ">
                 <h4 class="product-card-title">GreenTree Inn</h4>
               </a>
               <p>Апартаменты</p>
@@ -209,6 +213,7 @@
               <label for="star-2-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>	
             </div>
             <button class="button show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
+            <!--Пагинация-->
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -232,25 +237,27 @@
             <form class="sorting-type">
               <label class="visually-hidden" for="sorting">Гостиниц на странице:</label>
               <select class="select-control" id="sorting-2" name="sorting">
-                <option value="number">4</option>
+                <option selected value="4">4</option>
                 <option value="number">6</option>
                 <option value="number">8</option>
                 <option value="number">10</option>
               </select>
             </form>
         </section>
+        <!--Рассылка-->
         <section class="mailing">
           <h2 class="page-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
           <p>Только полезная информация и никакого спама,
             честное бойскаутское!</p>
             <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
              <p class="mailing-email">
-               <input class="field" placeholder="Ваш email" type="email" name="mailing-email" required>
+               <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email" required>
              </p>
              <button class="button mailing-button" type="submit">ПОДПИСАТЬСЯ</button>
             </form>
         </section>
     </main>
+    <!--Подвал-->
   <footer>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
