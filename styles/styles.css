@@ -23,7 +23,35 @@ body {
 }
 
 .main-index {
-    background-image: url("images/home-picture-mountains.jpg");
+    background-image: url("../images/home-picture-mountains.jpg");
+    width: 1200px;
+    height: 485px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% auto;
+}
+.main-index .welcome {
+    background-image: url("../images/welcome-logo.svg");
+    width: 458px;
+    height: 352px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% auto;
+}
+
+.card-background {
+    background-image: url("../images/background-mailing-matt.jpg");
+    width: 1200px;
+    height: 411;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% auto;
+    }
+
+.inner-header {
+    background-image: url("../images/catalog-background-matt.jpg");
+    width: 1200px;
+    height: 408px; 
     background-repeat: no-repeat;
     background-position: left;
     background-size: 100% auto;
