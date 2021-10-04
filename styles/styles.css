@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/ptsans-400.woff2"), format(".woff2");
+    src: url("../fonts/ptsans-400.woff2"), format(".woff2");
     font-display: swap;
 }
 
@@ -10,21 +10,21 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/ptsans-700.woff2), format(".woff2");
+    src: url("../fonts/ptsans-700.woff2"), format(".woff2");
     font-display: swap;
 }
 
 body {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #E5E5E5;;
 }
 
-.main-index{
-    background-image: url("/images/background-logo.jpg");
+.main-index {
+    background-image: url("images/background-logo.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    background-size: auto;
+    background-size: 100% auto;
 }
