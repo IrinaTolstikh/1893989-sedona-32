@@ -321,7 +321,7 @@ p.description {
   text-align: center;
 }
 /*Catalog*/
-h4 {
+.product-card-title {
   color: #FFFFFF;
   background-color: #000000;
   font-size: 24px;
@@ -339,7 +339,7 @@ p.apartment {
   text-align: left;
 }
 
-b {
+.product-card-price {
   color: #FFFFFF;
   background-color: #000000;
   font-size: 18px;
@@ -361,7 +361,7 @@ b {
   text-transform: uppercase;
 }
 
-label {
+.rating {
   color: #FFFFFF;
   background-color: #000000;
   font-size: 16px;
