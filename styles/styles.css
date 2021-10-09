@@ -61,7 +61,6 @@ body {
 }
 
 .navigation-list {
-  width: 1200px;
   margin:0 auto;
   padding: 0;
   list-style: none;
@@ -288,7 +287,6 @@ padding: 0;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
-  width: 1200px;
   height: 417px;
   margin: 0;
 }
@@ -307,13 +305,11 @@ padding: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  width: 1200px;
   height: 417px;
 }
 
 .card-background {
   background-image: url("../images/background-mailing-matt.jpg");
-  width: 1200px;
   height: 411px;
   background-repeat: no-repeat;
   background-position: left;
@@ -321,7 +317,6 @@ padding: 0;
 }
 
 .mailing {
-  width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -332,7 +327,6 @@ padding: 0;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/catalog-background-matt.jpg");
-  width: 1200px;
   height: 408px;
   background-repeat: no-repeat;
   background-position: left;
@@ -491,7 +485,6 @@ padding: 0;
 /*Footer*/
 .page-footer-container {
 display: flex;
-width: 1200px;
 margin: 0 auto;
 }
 
