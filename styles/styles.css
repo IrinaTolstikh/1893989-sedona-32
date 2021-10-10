@@ -51,7 +51,7 @@ body {
 
 .logo-sedona {
   width: 138px;
-  text-align: center;
+  margin-left: 531px;
 }
 
 .navigation {
@@ -141,6 +141,8 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  margin-left: 240px;
+  margin-right: 240px;
   color: #000000;
   background-color: #FFFFFF;
   text-transform: uppercase;
@@ -308,6 +310,12 @@ padding: 0;
   height: 417px;
 }
 
+.catalog-container {
+  display: flex;
+  align-items: flex-start;
+  width: 1200px;
+}
+
 .card-background {
   background-image: url("../images/background-mailing-matt.jpg");
   height: 411px;
@@ -351,7 +359,15 @@ padding: 0;
   font-weight: 400;
   text-align: left;
   text-decoration: none;
+  list-style: none;
 }
+
+.catalog-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 
 .catalog-filter-title {
   color: #FFFFFF;
@@ -362,7 +378,35 @@ padding: 0;
   text-align: left;
 }
 
-.control-label{
+.catalog-filter-group {
+  display: flex;
+  width: 1200px;
+  margin-right: 71px;
+  text-align: left;
+}
+
+.catalog-filter-group.infrastructure {
+  width: 150px;
+  margin-right: 67px;
+  padding-left: 0 auto;
+  text-align: left;
+}
+
+.catalog-filter-group.type-of-housing {
+  width: 96px;
+}
+.catalog-filter-group.price {
+  width: 979px;
+  height: 114px;
+  margin-right: 216px;
+  text-align: left;
+  }
+*********************************************
+.catalog-filter-item {
+  list-style: none;
+}
+
+.control-label {
   color: #FFFFFF;
   background-color: #000000;
   font-size: 18px;
@@ -373,8 +417,8 @@ padding: 0;
 }
 
 .catalog-filter-input {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -394,16 +438,36 @@ padding: 0;
 
 .button.button-discard {
   color: #FFFFFF;
+  background-color: transparent;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  background-size: cover;
 }
 
+.vertical-column {
+  width: 1056px;
+}
+
+.sorting-type {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button.button-light {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.button.button-show {
+  color: #000000;
+  background-color: #FFFFFF;
+}
 /*Catalog*/
 .product-card-title {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
@@ -411,8 +475,8 @@ padding: 0;
 }
 
 .apartment {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -420,8 +484,8 @@ padding: 0;
 }
 
 .product-card-price {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -442,8 +506,8 @@ padding: 0;
 }
 
 .rating {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -473,13 +537,13 @@ padding: 0;
 
 /*Pagination*/
 .pagination {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-
+  list-style: none;
 }
 
 /*Footer*/

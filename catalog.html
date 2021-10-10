@@ -7,43 +7,46 @@
   </head>
 
   <body>
-    <!--Шапка-->
-    <header class="page-header">
-      <!--Лого Седоны-->
-    <a href="home.html">
-      <img class="logo-sedona" src="images/sedona-logo.svg" width="138" height="70" alt ="Логотип Седоны.">
-    </a>
-    <!--Навигация-->
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="home.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-              Избранное
+<!--Шапка-->
+<header class="page-header">
+  <!--Лого Седоны-->
+  <a href="home.html">
+    <img class="logo-sedona" src="images/sedona-logo.svg" width="138" height="70" alt ="Логотип Седоны.">
+  </a>
+      <!--Навигация-->
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="home.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="about.html">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="hotels.html">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="navigation-user visually-hidden">
+              Поиск
             </span>
           </a>
-        </ul>
-          <button class="button" type="button">Хочу сюда!</button>
-      </nav>
-    </header>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="navigation-user visually-hidden">
+            Избранное
+          </span>
+        </a>
+        </li>
+        <li class="navigation-item">
+          <button class="navigation-user button" type="button">Хочу сюда!</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <main class="main-inner">
       <!--Фильтр-->
         <header class="inner-header">
@@ -66,8 +69,9 @@
         <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+              <div class="catalog-container">
                 <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Инфраструктура:</legend>
+                    <legend class="catalog-filter-title infrastructure">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
@@ -92,8 +96,8 @@
                          </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Тип жилья:</legend>
+                <fieldset class="catalog-filter-group ">
+                    <legend class="catalog-filter-title type-of-housung">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
@@ -118,7 +122,7 @@
                          </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group">
+                <fieldset class="catalog-filter-group price">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
@@ -135,10 +139,12 @@
                 </fieldset>
                 <button class="button button-apply" type="submit">ПРИМЕНИТЬ</button>
                 <button class="button button-discard" type="reset">Сбросить</button>
+              </div>
             </form>
             </section>
           </div>
             <!--Сортировка-->
+            <div class="vertical-column">
             <form class="sorting-type">
               <h3>НАЙДЕНО ГОСТИНИЦ: 38</h3>
               <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -245,6 +251,7 @@
                 <option value="number">8</option>
                 <option value="number">10</option>
               </select>
+            </div>
             </form>
         <!--Рассылка-->
         <section class="mailing">
@@ -261,28 +268,36 @@
     </main>
     <!--Подвал-->
   <footer>
-    <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Фейсбук</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-    </section>
+    <div class="page-footer-container">
+      <section class="footer-social">
+        <div class="background-footer">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button button-twitter" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button button-facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+        <div class="footer-phone">
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </div>
+      <div class="footer-about-text">
+        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+      </div>
+      </section>
+      </div>
   </footer>
 </body>
 </html>
