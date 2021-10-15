@@ -15,7 +15,7 @@
   </a>
       <!--Навигация-->
     <nav class="navigation">
-      <ul class="navigation-list">
+      <ul class="navigation-list left">
         <li class="navigation-item">
           <a class="navigation-link" href="home.html">Главная</a>
         </li>
@@ -26,7 +26,7 @@
           <a class="navigation-link" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list right">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
             <span class="navigation-user visually-hidden">
@@ -75,21 +75,21 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                        <input class="control-input" type="checkbox" name="pool" checked>
                         <span class="control-mark"></span>
                         <span class="control-label">Бассейн</span>
                     </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                                <input class="control-input" type="checkbox" name="parking" checked>
                                 <span class="control-mark"></span>
                                 <span class="control-label">Парковка</span>
                             </label>
                          </li>
                          <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                                <input class="control-input" type="checkbox" name="wi-fi">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Wi-Fi</span>
                             </label>
@@ -101,21 +101,21 @@
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
-                        <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
+                        <input class="control-input" type="radio" name="product-group" value="hotel" checked>
                         <span class="control-mark"></span>
                         <span class="control-label">Гостиница</span>
                     </label>
                         </li>
                         <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                                <input class="control-input" type="radio" name="product-group" value="motel">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Мотель</span>
                             </label>
                          </li>
                          <li class="catalog-filter-item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
+                                <input class="control-input" type="radio" name="product-group" value="apartments">
                                 <span class="control-mark"></span>
                                 <span class="control-label">Апартаменты</span>
                             </label>
@@ -142,9 +142,10 @@
               </div>
             </form>
             </section>
-          </div>
+              </div>
             <!--Сортировка-->
             <div class="vertical-column">
+            <section class="sorting-container">
             <form class="sorting-type">
               <h3>НАЙДЕНО ГОСТИНИЦ: 38</h3>
               <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -164,6 +165,7 @@
             <a href="#" class="button button-show">
               <span class="visually-hidden">Показать список</span>
             </a>
+            </section>
             <!--Каталог-->
             <div class="product-card">
               <a class="product-card-link" href="product.html">
@@ -223,6 +225,7 @@
             </div>
             <button class="button show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
             <!--Пагинация-->
+            <section class="pagination-container">
             <ul class="pagination">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -243,7 +246,7 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-            <form class="sorting-type">
+            <form class="pagination-show-more sorting-type">
               <label class="visually-hidden" for="sorting">Гостиниц на странице:</label>
               <select class="select-control" id="sorting-2" name="sorting">
                 <option selected value="4">4</option>
@@ -251,8 +254,9 @@
                 <option value="number">8</option>
                 <option value="number">10</option>
               </select>
-            </div>
             </form>
+            </section>
+            </div>
         <!--Рассылка-->
         <section class="mailing">
           <h2 class="page-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
