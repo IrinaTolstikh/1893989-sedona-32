@@ -31,8 +31,8 @@ body {
   background-color: #E5E5E5;
 }
 
-/*.visually-hidden {
-  position:absolute;
+.visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -40,7 +40,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}*/
+}
 
 .button {
   font-family: inherit;
@@ -81,7 +81,7 @@ body {
   display: flex;
   flex-wrap: no-wrap;
   width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -93,13 +93,22 @@ left: 71px;
 
 .navigation-list.right {
   position: absolute;
-  left: 896px;
+  left: 1100px;
+  top: 14px;
+  bottom: 14px;
 }
 
-.navigation-user.button {
-  position: absolute;
+.navigation-user .button {
   width: 160px;
   height: 37px;
+  position: absolute;
+  margin: 0 auto;
+
+  top: 20%;
+  bottom: 28%;
+  left: 80.67%;
+  right: 6%;
+  text-transform: uppercase;
 }
 .navigation-link {
   display: block;
@@ -458,7 +467,7 @@ bottom: 267px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 45px;
+  margin-top: 174px;
 }
 
 
@@ -557,18 +566,25 @@ bottom: 267px;
   display: flex;
   color: #000000;
   background-color: #FFFFFF;
+  margin: auto;
   margin-top: 200px;
   margin: 44px;
   padding: 42px;
 }
 
+.search .h3 {
+  position: absolute;
+  left: 71px;
+}
+
 .sorting-type {
-margin: auto;
+  display: flex;
+  margin: auto;
 }
 
 .sorting {
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -659,6 +675,7 @@ margin: auto;
 }
 
 .pagination {
+  display: flex;
   color: #000000;
   background-color: #FFFFFF;
   font-size: 20px;
@@ -675,10 +692,11 @@ margin: auto;
 }
 
 .pagination-link {
-  display:block;
+  display: block;
   box-sizing: border-box;
   width: 55px;
   height: 55px;
+  margin-right: 8px;
   font-weight: bold;
   line-height: 26px;
   color: #FFFFFF;
@@ -734,7 +752,7 @@ padding: 40px 0;
   position: absolute;
   width: 720px;
   padding: 40px auto;
-  margin-top: -40px;
+  margin-top: -160px;
   margin-bottom: 40px;
   margin-right: 240px;
   margin-left: 240px;
@@ -758,7 +776,7 @@ padding: 40px 0;
   position: absolute;
   margin-left: 850px;
   margin-right: 90px;;
-  margin-top: -40px;
+  margin-top: -160px;
 
 }
 .background-footer {

@@ -28,18 +28,10 @@
       </ul>
       <ul class="navigation-list right">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="navigation-user visually-hidden">
-              Поиск
-            </span>
-          </a>
+          <button class="navigation-user button visually-hidden" type="button">Поиск</button>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">
-            <span class="navigation-user visually-hidden">
-            Избранное
-          </span>
-        </a>
+          <button class="navigation-user button visually-hidden" type="button">Избранное</button>
         </li>
         <li class="navigation-item">
           <button class="navigation-user button" type="button">Хочу сюда!</button>
@@ -142,12 +134,11 @@
               </div>
             </form>
             </section>
-              </div>
             <!--Сортировка-->
             <div class="vertical-column">
             <section class="sorting-container">
             <form class="sorting-type">
-              <h3>НАЙДЕНО ГОСТИНИЦ: 38</h3>
+              <h3 class="search">НАЙДЕНО ГОСТИНИЦ: 38</h3>
               <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
                 <option value="cheap">Сначала дешевое</option>
@@ -247,7 +238,7 @@
               </li>
             </ul>
             <form class="pagination-show-more sorting-type">
-              <label class="visually-hidden" for="sorting">Гостиниц на странице:</label>
+              <label class="select" for="sorting">Гостиниц на странице:</label>
               <select class="select-control" id="sorting-2" name="sorting">
                 <option selected value="4">4</option>
                 <option value="number">6</option>
