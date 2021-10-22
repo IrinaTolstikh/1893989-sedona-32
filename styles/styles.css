@@ -187,7 +187,7 @@ left: 71px;
   color: #000000;
   background-color: #FFFFFF;
   margin-bottom: 79px;
-  margin-top: 716px;
+  margin-top: 680px;
 }
 
 .sedona-head {
@@ -221,8 +221,10 @@ left: 71px;
 /*list*/
 .advantages-list{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 832px;
+  margin-top: 365px;
+  margin-bottom: 0;
   padding: 0;
   text-align: center;
 }
@@ -231,18 +233,13 @@ left: 71px;
 
 .advantages-item {
   width: 400px;
-  height: 384px;
   margin-top: 139px;
   padding-top: 79px;
   list-style: none;
 }
 
 .index-columns {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-padding-top: 139px;
-
+  padding-top: 139px;
 }
 
 .real-city {
@@ -261,9 +258,12 @@ padding-top: 139px;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
   height: 384px;
+  margin-top: 547px;
+  margin-left: -400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
+
 }
 
 .food {
@@ -272,6 +272,8 @@ padding-top: 139px;
   background-image: url("../images/square-white.svg");
   width: 400px;
   height: 384px;
+  margin-top: 547px;
+  margin-left: -400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -282,6 +284,8 @@ padding-top: 139px;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
   height: 384px;
+  margin-top: -626px;
+  margin-left: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -293,6 +297,8 @@ padding-top: 139px;
   background-image: url("../images/square-blue.svg");
   width: 400px;
   height: 384px;
+  margin-top: -242px;
+  margin-left: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -303,6 +309,8 @@ padding-top: 139px;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
   height: 384px;
+  margin-top: 166px;
+  margin-left: -800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -313,6 +321,8 @@ padding-top: 139px;
   background-image: url("../images/square-lightblue2.svg");
   width: 400px;
   height: 384px;
+  margin-top: -626px;
+  margin-left: 400px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -323,9 +333,24 @@ padding-top: 139px;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
   height: 384px;
+  margin-top: -626px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
+}
+
+/*photo-advantages*/
+
+.photo-1 {
+  position: absolute;
+  left: 560px;
+  top: 856px;
+}
+
+.photo-2 {
+position: absolute;
+left: 160px;
+top: 1624px;
 }
 
 /*Title*/
@@ -464,12 +489,17 @@ bottom: 267px;
 }
 
 .catalog-products {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 174px;
 }
 
+.form .catalog-filter {
+  display: grid;
+  grid-template-columns: 150px 144px 287px;
+  gap: 67px 167px;
+}
 
 .catalog-filter-title {
   color: #FFFFFF;
@@ -483,26 +513,24 @@ bottom: 267px;
 
 .catalog-filter-group {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-end;
   position: relative;
   width: 1200px;
-  margin-right: 71px;
+  margin: 0;
   text-align: left;
 }
 
 .catalog-filter-title.infrastructure {
-  width: 150px;
   margin-left: 71px;
   padding-left: 0 auto;
   text-align: left;
 }
 
 .catalog-filter-title.type-of-housing {
-  width: 96px;
   text-align: left;
 }
 .catalog-filter-title.price {
-  width: 290px;
   height: 115px;
   margin-right: 216px;
   text-align: center;
@@ -521,6 +549,12 @@ bottom: 267px;
   text-align: left;
   text-transform: capitalize;
 }
+.catalog-filter-input .input,
+.catalog-filter-label .label {
+display: block;
+width: 100%;
+box-sizing: border-box;
+}
 
 .catalog-filter-input {
   color: #000000;
@@ -529,7 +563,12 @@ bottom: 267px;
   line-height: 24px;
   font-weight: 400;
   text-align: left;
-  text-transform:lowercase;
+  text-transform: lowercase;
+}
+.catalog-button {
+  display: grid;
+  grid-column: 4/5;
+  justify-self: start;
 }
 
 .button.button-apply {
@@ -537,7 +576,7 @@ bottom: 267px;
   background-color: #000000;
   position: relative;
   margin-right: 72px;
-  margin-bottom: 126px;
+  margin-top: 43px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -548,10 +587,10 @@ bottom: 267px;
 .button.button-discard {
   color: #FFFFFF;
   background-color: transparent;
-  position: relative;
+  position: absolute;
   font-size: 18px;
   margin-right: 72px;
-  margin-bottom: 83px;
+  margin-top: 83px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
@@ -606,13 +645,47 @@ bottom: 267px;
   background-color: #FFFFFF;
 }
 /*Catalog*/
+.product-list {
+  display: grid;
+  grid-template-rows: repeat(3, 123px);
+  margin: 0;
+  margin-bottom: 1px;
+  padding: 0;
+  list-style: none;
+  gap: 58px;
+}
+.product-card {
+  display: grid;
+  grid-template-rows: 180px min-content min-content auto min-content min-content 72px;
+  grid-template-columns: 72px 912px 72px;
+}
+
+.product-card-image {
+  margin-left: 72px;
+  grid-column: 1/2;
+}
+.product-card-title,
+.apartment,
+.product-card-price,
+.product-card-button .button
+.product-card-like .button{
+  grid-column: 2/3;
+}
+
+.rating-area {
+  grid-column: 4/5;
+}
+
 .product-card-title {
+  position: absolute;
   color: #000000;
   background-color: #FFFFFF;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
   text-align: center;
+  margin-top: -125px;
+  margin-left: 290px;
 }
 
 .apartment {
@@ -622,20 +695,25 @@ bottom: 267px;
   line-height: 24px;
   font-weight: 400;
   text-align: left;
+  margin-top: 30px;
+  margin-left: 218px;
 }
 
 .product-card-price {
+  position: absolute;
   color: #000000;
-  background-color: #FFFFFF;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   text-align: left;
   text-decoration: none;
   text-transform: capitalize;
+  margin-top: 30px;
+  margin-left: 480px;
 }
 
 .product-card-button.button {
+  position: absolute;
   color: #FFFFFF;
   background-color: #000000;
   font-size: 16px;
@@ -644,6 +722,15 @@ bottom: 267px;
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 8px;
+  margin-top: 83px;
+  margin-left: 290px;
+}
+
+.product-card-like .button {
+  position: absolute;
+  margin-top: 140px;
+  margin-left: -80px;
 }
 
 .rating {
@@ -653,7 +740,7 @@ bottom: 267px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .button.show-more {

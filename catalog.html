@@ -129,8 +129,10 @@
                         <input class="catalog-filter-input" type="number" name="max-price">до
                     </label>
                 </fieldset>
+                <div class="catalog-button">
                 <button class="button button-apply" type="submit">ПРИМЕНИТЬ</button>
                 <button class="button button-discard" type="reset">Сбросить</button>
+                </div>
               </div>
             </form>
             </section>
@@ -158,62 +160,72 @@
             </a>
             </section>
             <!--Каталог-->
-            <div class="product-card">
+            <ul class="product-list">
+              <li class="product-card">
               <a class="product-card-link" href="product.html">
+              <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/amara-resort-hotel.jpg" width="180" height="120" alt="Фото отеля Amara Resort & Spa.">
+              </div>
                 <h4 class="product-card-title">Amara Resort & Spa</h4>
               </a>
               <p class="apartment">Гостиница</p>
               <b class="product-card-price">От 4000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
-            </div>
             <div class="rating-area">
               <input type="radio" id="star-4" name="rating" value="4">
               <label class="rating" for="star-4" title="Рейтинг: 8,5">Рейтинг: 8,5</label>
             </div>
-            <div class="product-card">
+              </li>
+            <li class="product-card">
               <a class="product-card-link" href="product.html">
+                <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/desert-quail-hotel.jpg" width="180" height="120" alt="Фото отеля Desert Quail Inn.">
+                </div>
                 <h4 class="product-card-title">Desert Quail Inn</h4>
               </a>
               <p class="apartment">Мотель</p>
               <b class="product-card-price">От 3000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
-            </div>
             <div class="rating-area">
               <input type="radio" id="star-3" name="rating" value="3">
               <label class="rating" for="star-3" title="Рейтинг: 8,5">Рейтинг: 8,9</label>
             </div>
-            <div class="product-card">
+          </li>
+            <li class="product-card">
               <a class="product-card-link" href="product.html">
+                <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/villas-at-poco-diablo-hotel.jpg" width="180" height="120" alt="Вид из отеля Villas at Poco Diablo.">
+                </div>
                 <h4 class="product-card-title">Villas at Poco Diablo</h4>
               </a>
               <p class="apartment">Апартаменты</p>
               <b class="product-card-price">От 2000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
-              <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
-            </div>
+              <a href="#" class="product-card-like button">В ИЗБРАННОМ</a>
             <div class="rating-area">
               <input type="radio" id="star-2" name="rating" value="2">
               <label class="rating" for="star-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>
             </div>
-            <div class="product-card">
+          </li>
+            <li class="product-card">
               <a class="product-card-link" href="product.html">
+              <div class="photo-product"></div>
                 <img class="product-card-image" src="images/catalog/green-tree-inn-hotel.jpg" width="180" height="120" alt="Вид из отеля GreenTree Inn.">
+              </div>
                 <h4 class="product-card-title">GreenTree Inn</h4>
               </a>
               <p class="apartment">Апартаменты</p>
               <b class="product-card-price">От 3000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
-            </div>
             <div class="rating-area">
               <input type="radio" id="star-2-2" name="rating" value="2">
               <label class="rating" for="star-2-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>
             </div>
+            </li>
+          </ul>
             <button class="button show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
             <!--Пагинация-->
             <section class="pagination-container">
