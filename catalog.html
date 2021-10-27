@@ -14,30 +14,34 @@
     <img class="logo-sedona" src="images/sedona-logo.svg" width="138" height="70" alt ="Логотип Седоны.">
   </a>
       <!--Навигация-->
-    <nav class="navigation">
-      <ul class="navigation-list left">
-        <li class="navigation-item">
-          <a class="navigation-link" href="home.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="hotels.html">Гостиницы</a>
-        </li>
-      </ul>
-      <ul class="navigation-list right">
-        <li class="navigation-item">
-          <button class="navigation-user button visually-hidden" type="button">Поиск</button>
-        </li>
-        <li class="navigation-item">
-          <button class="navigation-user button visually-hidden" type="button">Избранное</button>
-        </li>
-        <li class="navigation-item">
-          <button class="navigation-user button" type="button">Хочу сюда!</button>
-        </li>
-      </ul>
-    </nav>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="home.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <button class="navigation-user button" type="button">Хочу сюда!</button>
+          </li>
+        </ul>
+      </nav>
   </header>
     <main class="main-inner">
       <!--Фильтр-->
@@ -171,7 +175,7 @@
               <p class="apartment">Гостиница</p>
               <b class="product-card-price">От 4000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
-              <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
+              <a href="#" class="product-card-like button">В ИЗБРАННОЕ</a>
             <div class="rating-area">
               <input type="radio" id="star-4" name="rating" value="4">
               <label class="rating" for="star-4" title="Рейтинг: 8,5">Рейтинг: 8,5</label>
@@ -187,7 +191,7 @@
               <p class="apartment">Мотель</p>
               <b class="product-card-price">От 3000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
-              <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
+              <a href="#" class="product-card-like button">В ИЗБРАННОЕ</a>
             <div class="rating-area">
               <input type="radio" id="star-3" name="rating" value="3">
               <label class="rating" for="star-3" title="Рейтинг: 8,5">Рейтинг: 8,9</label>
@@ -211,7 +215,7 @@
           </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
-              <div class="photo-product"></div>
+              <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/green-tree-inn-hotel.jpg" width="180" height="120" alt="Вид из отеля GreenTree Inn.">
               </div>
                 <h4 class="product-card-title">GreenTree Inn</h4>
@@ -219,7 +223,7 @@
               <p class="apartment">Апартаменты</p>
               <b class="product-card-price">От 3000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
-              <a href="#" class="product-card-button button">В ИЗБРАННОЕ</a>
+              <a href="#" class="product-card-like button">В ИЗБРАННОЕ</a>
             <div class="rating-area">
               <input type="radio" id="star-2-2" name="rating" value="2">
               <label class="rating" for="star-2-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>
