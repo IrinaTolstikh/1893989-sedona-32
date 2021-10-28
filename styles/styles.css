@@ -124,7 +124,7 @@ body {
   position: absolute;
   margin: 0 auto;
   padding: 10px;
-  top: 0;
+  top: 14px;
   bottom: 28%;
   right: 200px;
   text-transform: uppercase;
@@ -193,14 +193,12 @@ body {
 
 .navigation-icon {
   position: absolute;
-  top: 0;
+  top: 24px;
   right: 0;
   bottom: 0;
   left: 380px;
   margin: auto;
   padding: 10px;
-  fill: #ff6347;
-  border: red solid 2px;
   z-index: 1;
 }
 .navigation-link:hover.navigation-icon {
@@ -274,6 +272,7 @@ body {
 }
 
 .description {
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 36px;
   font-weight: 400;
@@ -345,7 +344,6 @@ body {
 
 .real-city {
   color: #FFFFFF;
-  background-color: #000000;
   background-image: url("../images/square-blue.svg");
   width: 400px;
   height: 384px;
@@ -370,7 +368,6 @@ body {
 
 .food {
   color: #FFFFFF;
-  background-color: #000000;
   background-image: url("../images/square-white.svg");
   width: 400px;
   height: 384px;
@@ -395,7 +392,6 @@ body {
 
 .diablo-bridge {
   color: #FFFFFF;
-  background-color: #000000;
   background-image: url("../images/square-blue.svg");
   width: 400px;
   height: 384px;
@@ -470,12 +466,14 @@ top: 1600px;
 
 /*Subtitle*/
 .advantages-subtitle {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
 }
 
 .advantages-description {
+  font-family: "PT Sans", sans-serif;
   color: #000000;
   background-color: #FFFFFF;
   font-size: 18px;
@@ -491,11 +489,13 @@ top: 1600px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  font-style: normal;
   text-align: center;
   max-height: 417px;
 }
 
 .appointment-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -570,9 +570,17 @@ top: 1600px;
   text-align: center;
 }
 
+.mailing-info {
+  color: #FFFFFF;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
 .mailing-form {
   display: flex;
-  outline: 5px solid tomato;
   margin-left: 180px;
   margin-right: 50px;
 }
