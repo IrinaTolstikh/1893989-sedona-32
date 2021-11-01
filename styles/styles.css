@@ -98,6 +98,7 @@ body {
   margin: 0 auto;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 
 .home {
@@ -158,6 +159,7 @@ body {
 
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -172,7 +174,8 @@ body {
 }
 
 .navigation-link:active.navigation-link:focus {
-  outline: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .navigation-link:focus {
@@ -183,26 +186,29 @@ body {
 }
 
 .navigation-link:active {
-  background-color:  #615048;
+  color:  #615048;
   opacity: 0.3;
   outline: none;
+  border: none;
 }
 
 .navigation-link:disabled:hover {
-  background-color: #756257;
+  color: #756257;
   outline: none;
   cursor: default;
 }
 
 .navigation-link.current::before {
-  right: 20px;
+  position: absolute;
+  right: 40px;
   bottom: 0;
-  top: 55px;
-  left: 20px;
-  width: 70px;
+  top: 64px;
+  left: 240px;
+  width: 78px;
   height: 2px;
   background-color: #756257;
   content: "";
+  z-index: 2;
 }
 
 .navigation-user {
@@ -214,15 +220,16 @@ body {
 }
 
 .navigation-user:active.navigation-user:focus {
-  outline: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .navigation-user.button:active {
-
   background-color:  #615048;
   opacity: 0.3;
   outline: none;
 }
+
 .navigation-user:focus {
   box-shadow: inset 0 0 0 3px #83B3D3;
   box-sizing: border-box;
@@ -247,7 +254,10 @@ body {
   fill: #756257;
 }
 
-
+.navigation-link:active.navigation-icon {
+ fill: #756257;
+ opacity: 0.3;
+}
 
 
 .main-container {
@@ -391,6 +401,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .advantages-description.city{
@@ -605,7 +618,8 @@ body {
   background: #615048;
 }
 .button-search:active.button-search:focus {
-  outline: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .button-search:focus {
@@ -675,6 +689,7 @@ outline: none;
   border-radius: 10px 0px 0px 10px;
 }
 
+
 .field:hover {
   background-color: #E6E6E6;
 }
@@ -697,6 +712,7 @@ outline: none;
   border-radius: 10px 0px 0px 10px;
   outline: 0;
 }
+
 .field:error {
   background-color: #FFFFFF;
   box-shadow: inset 0 0 0 3px #FF5757;
@@ -725,12 +741,12 @@ outline: none;
   opacity: 0.3;
 }
 .mailing-button:active.mailing-button:focus {
-  outline: 0;
+  box-shadow: none;
+  outline: none;
 }
 
 .mailing-button:active {
   fill: #FFFFFF;
-  opacity: 0.3;
   outline: none;
 }
 
@@ -1158,26 +1174,32 @@ box-sizing: border-box;
 }
 
 
-.footer-social-link:hover.social-icon{
+.footer-social-link:hover .social-icon{
   fill: #68A2CA;
 }
 
-.footer-social-link:active.social-icon:focus {
-  box-shadow: inset 0 0 0 3px #68A2CA;
-  box-sizing: border-box;
-  border-radius: 10px;
-  outline: 0;
+.footer-social-link:active {
+  outline: none;
 }
 
-.social-icon:focus {
-  box-shadow: inset 0 0 0 3px #68A2CA;
+.footer-social-link:active .social-icon {
+  fill: #68A2CA;
+  opacity: 0.3;
+  outline: 0;
+}
+.footer-social-link:focus {
+  box-shadow: inset 0 0 0 3px #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
   outline: none;
 }
+.footer-social-link:active.footer-social-link:focus {
+  box-shadow: none;
+  outline: none;
+}
 
-.social-icon:disabled:hover {
-  background-color: #68A2CA;
+.footer-social-link:disabled:hover.social-icon {
+  color: #68A2CA;
   outline: none;
   cursor: default;
   opacity: 0.3;
@@ -1207,8 +1229,9 @@ box-sizing: border-box;
 .footer-contacts-phone:hover.footer-phone {
   fill: #756257;
 }
-.footer-phone:active.footer-phone:focus {
-  outline: 0;
+.footer-contacts-phone:active.footer-contacts-phone:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 .footer-contacts-phone:focus {
@@ -1249,17 +1272,16 @@ box-sizing: border-box;
   padding: 10px;
 }
 
-.htmlacademy-link:hover{
+.htmlacademy-link:hover .academy-icon {
   fill:#756257;
 }
-.htmlacademy-link:hover.academy {
-  fill: #756257;
-}
-.htmlacademy-link:active.academy:focus {
-  outline: 0;
+
+.htmlacademy-link:active.htmlacademy-link:focus {
+  box-shadow: none;
+  outline: none;
 }
 
-.htmlacademy-link:active {
+.htmlacademy-link:active .academy-icon {
   fill: #756257;
   opacity: 0.3;
 }
@@ -1267,7 +1289,7 @@ box-sizing: border-box;
   box-shadow: inset 0 0 0 3px #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
-  outline: none;
+  outline: 0;
 }
 
 .academy-icon:disabled:hover {
