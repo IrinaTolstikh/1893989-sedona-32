@@ -16,33 +16,40 @@
       <!--Навигация-->
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item home">
             <a class="navigation-link" href="home.html">Главная</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item about">
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          <li class="navigation-item hotels">
+            <a class="navigation-link current" href="hotels.html">Гостиницы</a>
           </li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
+          </ul>
+          <ul class="navigation-list user">
+          <li class="navigation-item search-icon">
             <a class="navigation-link" href="#">
+              <svg class="navigation-icon search-icon" aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 16.5L14.3 12.8C15.3 11.5 16 9.8 16 7.9C16 3.5 12.4 -0.1 8 -0.1C3.6 -0.1 0 3.6 0 8C0 12.4 3.6 16 8 16C9.8 16 11.5 15.4 12.9 14.3L16.6 18L18 16.5ZM8 14C4.7 14 2 11.3 2 8C2 4.7 4.7 2 8 2C11.3 2 14 4.7 14 8C14 11.3 11.3 14 8 14Z" />
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item favorites-icon">
             <a class="navigation-link" href="#">
+              <svg class="navigation-icon favorites-icon" aria-hidden="true" focusable="false" width="31" height="27" viewBox="0 0 31 27" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 27c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/><path d="M31 9.5a9.5 9.5 0 1 1-19 0 9.5 9.5 0 0 1 19 0Z" fill="#7DB54F"/><path d="M17.63 12.26h1.4V7.42l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37V13h-3.55v-.74Zm7.83-4.67c0 .353-.067.717-.2 1.09a6.562 6.562 0 0 1-.51 1.11c-.207.373-.44.74-.7 1.1-.26.353-.52.69-.78 1.01l-.49.43v.04l.64-.11h2.18V13h-3.98v-.29c.147-.153.323-.343.53-.57a16.081 16.081 0 0 0 1.3-1.63c.22-.313.417-.63.59-.95.18-.32.323-.637.43-.95.107-.313.16-.61.16-.89 0-.327-.093-.597-.28-.81-.187-.22-.47-.33-.85-.33-.253 0-.5.053-.74.16-.24.1-.447.217-.62.35l-.33-.57c.233-.2.51-.357.83-.47.32-.113.663-.17 1.03-.17.287 0 .54.043.76.13.22.08.407.197.56.35.153.153.27.337.35.55.08.207.12.433.12.68Z" fill="#fff"/>
+              </svg>
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-item enter">
             <button class="navigation-user button" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
-  </header>
+    </header>
+
     <main class="main-inner">
       <!--Фильтр-->
         <header class="inner-header">
@@ -65,9 +72,8 @@
         <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="catalog-container">
-                <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title infrastructure">Инфраструктура:</legend>
+                <fieldset class="catalog-filter-group infrastructure">
+                    <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
@@ -92,8 +98,8 @@
                          </li>
                     </ul>
                 </fieldset>
-                <fieldset class="catalog-filter-group ">
-                    <legend class="catalog-filter-title type-of-housung">Тип жилья:</legend>
+                <fieldset class="catalog-filter-group type-of-housung">
+                    <legend class="catalog-filter-title">Тип жилья:</legend>
                     <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                     <label class="control">
@@ -133,11 +139,12 @@
                         <input class="catalog-filter-input" type="number" name="max-price">до
                     </label>
                 </fieldset>
-                <div class="catalog-button">
-                <button class="button button-apply" type="submit">ПРИМЕНИТЬ</button>
-                <button class="button button-discard" type="reset">Сбросить</button>
-                </div>
-              </div>
+                <fieldset class="catalog-filter-group button-group"
+                  <div class="catalog-button">
+                  <button class="button button-apply" type="submit">ПРИМЕНИТЬ</button>
+                  <button class="button button-discard" type="reset">Сбросить</button>
+                  </div>
+              </fieldset>
             </form>
             </section>
             <!--Сортировка-->
@@ -152,25 +159,28 @@
                 <option value="popular">Сначала популярное</option>
               </select>
               <button class="visually-hidden" type="submit">Отсортировать жилье</button>
+              <a href="#" class="button button-light">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a href="#" class="button button-light-slide">
+                <span class="visually-hidden">Показать слайды</span>
+              </a>
+              <a href="#" class="button button-show">
+                <span class="visually-hidden">Показать список</span>
+              </a>
             </form>
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button button-light">
-              <span class="visually-hidden">Показать слайды</span>
-            </a>
-            <a href="#" class="button button-show">
-              <span class="visually-hidden">Показать список</span>
-            </a>
             </section>
             <!--Каталог-->
+            <div class="card-wrapper">
             <ul class="product-list">
               <li class="product-card">
               <a class="product-card-link" href="product.html">
               <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/amara-resort-hotel.jpg" width="180" height="120" alt="Фото отеля Amara Resort & Spa.">
               </div>
+              <div class="product-card-title-link">
                 <h4 class="product-card-title">Amara Resort & Spa</h4>
+              </div>
               </a>
               <p class="apartment">Гостиница</p>
               <b class="product-card-price">От 4000 ₽</b>
@@ -181,6 +191,10 @@
               <label class="rating" for="star-4" title="Рейтинг: 8,5">Рейтинг: 8,5</label>
             </div>
               </li>
+            </ul>
+            </div>
+            <div class="card-wrapper">
+            <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <div class="photo-product">
@@ -197,6 +211,10 @@
               <label class="rating" for="star-3" title="Рейтинг: 8,5">Рейтинг: 8,9</label>
             </div>
           </li>
+          </ul>
+          </div>
+          <div class="card-wrapper">
+          <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">
                 <div class="photo-product">
@@ -207,12 +225,16 @@
               <p class="apartment">Апартаменты</p>
               <b class="product-card-price">От 2000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
-              <a href="#" class="product-card-like button">В ИЗБРАННОМ</a>
+              <a href="#" class="product-card-like fav button">В ИЗБРАННОМ</a>
             <div class="rating-area">
               <input type="radio" id="star-2" name="rating" value="2">
               <label class="rating" for="star-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>
             </div>
           </li>
+          </ul>
+          </div>
+          <div class="card-wrapper">
+          <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">
               <div class="photo-product">
@@ -230,6 +252,7 @@
             </div>
             </li>
           </ul>
+          </div>
             <button class="button show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
             <!--Пагинация-->
             <section class="pagination-container">
@@ -265,50 +288,73 @@
             </section>
             </div>
         <!--Рассылка-->
-        <section class="mailing">
-          <h2 class="page-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-          <p>Только полезная информация и никакого спама,
-            честное бойскаутское!</p>
-            <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-             <p class="mailing-email">
-               <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email" required>
-             </p>
-             <button class="button mailing-button" type="submit">ПОДПИСАТЬСЯ</button>
-            </form>
-        </section>
-    </main>
-    <!--Подвал-->
-  <footer>
-    <div class="page-footer-container">
-      <section class="footer-social">
-        <div class="background-footer">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button button-twitter" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Твиттер</span>
+          <section class="mailing">
+            <h2 class="page-title-catalog">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <p class="mailing-info-catalog">Только полезная информация и никакого спама,<br>
+              честное бойскаутское!</p>
+              <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+               <p class="mailing-email">
+                 <input class="field" placeholder="Ваш e-mail" type="email" name="mailing-email" required>
+               </p>
+               <button class="button mailing-button" type="submit">Подписаться</button>
+              </form>
+          </section>
+          </div>
+        </div>
+        </main>
+        <!--Подвал-->
+        <footer class="page-footer">
+          <div class="page-footer-container">
+          <section class="footer-social">
+            <div class="background-footer">
+            <h2 class="visually-hidden">Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-twitter" href="https://twitter.com/htmlacademy_ru">
+                  <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="15" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z" />
+                  </svg>
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-facebook" href="https://www.facebook.com/htmlacademy">
+                  <svg class="social-icon" aria-hidden="true" width="10" height="18"  viewBox="0 0 10 18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
+                </svg>
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg class="social-icon" aria-hidden="true" width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
+                  </svg>
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </section>
+        </div>
+          <div class="footer-phone-container">
+          <section class="footer-phone">
+            <div class="footer-phone">
+            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </div>
+          </section>
+          </div>
+          <div class="about-academy-container">
+          <section class="about-academy">
+          <div class="footer-about-text academy-icon">
+             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+             <svg class="academy-icon"  aria-hidden="true" width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+             </svg>
+             <span class="about-text visually-hidden">Сделано в .html academy</span>
             </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button button-facebook" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button button-youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-        <div class="footer-phone">
-        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
-      <div class="footer-about-text">
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
-      </div>
-      </section>
-      </div>
-  </footer>
-</body>
-</html>
+          </div>
+          </section>
+        </footer>
+      </body>
+    </html>
