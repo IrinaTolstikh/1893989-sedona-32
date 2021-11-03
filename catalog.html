@@ -58,11 +58,20 @@
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
+                      <svg width="12" aria-hidden="true" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z" fill="#fff"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill="#fff"/>
+                      </svg>
                         <span class="visually-hidden">
                             Главная
                         </span>
                     </a>
                 </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link">
+                    <svg width="5" aria-hidden="true" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z" fill="white"/>
+                      </svg>
+
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
@@ -159,13 +168,35 @@
                 <option value="popular">Сначала популярное</option>
               </select>
               <button class="visually-hidden" type="submit">Отсортировать жилье</button>
-              <a href="#" class="button button-light">
+              <a href="#" class="card-grid-toggle button button-light">
+                <svg width="16" aria-hidden="true" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 0H0V2H2V0Z" fill="black"/>
+                <path d="M16 0H4V2H16V0Z" fill="black"/>
+                <path d="M2 4H0V6H2V4Z" fill="black"/>
+                <path d="M16 4H4V6H16V4Z" fill="black"/>
+                <path d="M2 8H0V10H2V8Z" fill="black"/>
+                <path d="M16 8H4V10H16V8Z" fill="black"/>
+                <path d="M2 12H0V14H2V12Z" fill="black"/>
+                <path d="M16 12H4V14H16V12Z" fill="black"/>
+                </svg>
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a href="#" class="button button-light-slide">
+              <a href="#" class="card-grid-toggle button button-light-slide">
+                <svg aria-hidden="true" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 12H0V14H16V12Z" fill="black"/>
+                  <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                  </svg>
                 <span class="visually-hidden">Показать слайды</span>
               </a>
-              <a href="#" class="button button-show">
+              <a href="#" class="card-grid-toggle button button-show">
+                <svg aria-hidden="true" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H0V6H4V0Z" fill="black"/>
+                  <path d="M16 0H12V6H16V0Z" fill="black"/>
+                  <path d="M10 0H6V6H10V0Z" fill="black"/>
+                  <path d="M4 8H0V14H4V8Z" fill="black"/>
+                  <path d="M16 8H12V14H16V8Z" fill="black"/>
+                  <path d="M10 8H6V14H10V8Z" fill="black"/>
+                  </svg>
                 <span class="visually-hidden">Показать список</span>
               </a>
             </form>
@@ -173,11 +204,12 @@
             <!--Каталог-->
             <div class="card-wrapper">
             <ul class="product-list">
-              <li class="product-card">
+              <li class="product-item">
               <a class="product-card-link" href="product.html">
               <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/amara-resort-hotel.jpg" width="180" height="120" alt="Фото отеля Amara Resort & Spa.">
               </div>
+              <div class="product-card-content">
               <div class="product-card-title-link">
                 <h4 class="product-card-title">Amara Resort & Spa</h4>
               </div>
@@ -186,70 +218,67 @@
               <b class="product-card-price">От 4000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-like button">В ИЗБРАННОЕ</a>
-            <div class="rating-area">
-              <input type="radio" id="star-4" name="rating" value="4">
+            <div class="rating-area four-star">
               <label class="rating" for="star-4" title="Рейтинг: 8,5">Рейтинг: 8,5</label>
             </div>
-              </li>
-            </ul>
             </div>
-            <div class="card-wrapper">
-            <ul class="product-list">
-            <li class="product-card">
+              </li>
+            <li class="product-item">
               <a class="product-card-link" href="product.html">
                 <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/desert-quail-hotel.jpg" width="180" height="120" alt="Фото отеля Desert Quail Inn.">
                 </div>
+                <div class="product-card-content">
+                  <div class="product-card-title-link">
                 <h4 class="product-card-title">Desert Quail Inn</h4>
+                  </div>
               </a>
               <p class="apartment">Мотель</p>
               <b class="product-card-price">От 3000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-like button">В ИЗБРАННОЕ</a>
-            <div class="rating-area">
-              <input type="radio" id="star-3" name="rating" value="3">
+            <div class="rating-area three-star">
               <label class="rating" for="star-3" title="Рейтинг: 8,5">Рейтинг: 8,9</label>
             </div>
-          </li>
-          </ul>
           </div>
-          <div class="card-wrapper">
-          <ul class="product-list">
-            <li class="product-card">
+          </li>
+            <li class="product-item">
               <a class="product-card-link" href="product.html">
                 <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/villas-at-poco-diablo-hotel.jpg" width="180" height="120" alt="Вид из отеля Villas at Poco Diablo.">
                 </div>
+                <div class="product-card-content">
+                  <div class="product-card-title-link">
                 <h4 class="product-card-title">Villas at Poco Diablo</h4>
+                </div>
               </a>
               <p class="apartment">Апартаменты</p>
               <b class="product-card-price">От 2000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-like fav button">В ИЗБРАННОМ</a>
-            <div class="rating-area">
-              <input type="radio" id="star-2" name="rating" value="2">
+            <div class="rating-area two-star">
               <label class="rating" for="star-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>
             </div>
+            </div>
           </li>
-          </ul>
-          </div>
-          <div class="card-wrapper">
-          <ul class="product-list">
-            <li class="product-card">
+            <li class="product-item">
               <a class="product-card-link" href="product.html">
               <div class="photo-product">
                 <img class="product-card-image" src="images/catalog/green-tree-inn-hotel.jpg" width="180" height="120" alt="Вид из отеля GreenTree Inn.">
               </div>
+              <div class="product-card-content">
+                <div class="product-card-title-link">
                 <h4 class="product-card-title">GreenTree Inn</h4>
+                </div>
               </a>
               <p class="apartment">Апартаменты</p>
               <b class="product-card-price">От 3000 ₽</b>
               <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
               <a href="#" class="product-card-like button">В ИЗБРАННОЕ</a>
-            <div class="rating-area">
-              <input type="radio" id="star-2-2" name="rating" value="2">
+            <div class="rating-area two-star">
               <label class="rating" for="star-2-2" title="Рейтинг: 9,2">Рейтинг: 9,2</label>
             </div>
+          </div>
             </li>
           </ul>
           </div>
