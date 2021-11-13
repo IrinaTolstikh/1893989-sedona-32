@@ -294,44 +294,65 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group modal-form-date">
-              <span class="form-label form-label-icon">
-                <label for="modal-date arrival">
-                  Дата заезда:</label>
+            <label class="form-label form-label-icon"></label>
+            <span class="modal-date arrival">
+                  Дата заезда:
+                  <span class="modal-field">
               <input class="field-modal arrivals" type="text" id="modal-date" name="modal-date" placeholder="Укажите дату" value="27 апреля 2020">
-              <p class="text-modal">Мы не можем отправить вас в прошлое.</p>
-            </p>
-            </form>
-            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group modal-form-date">
-                <span class="form-label form-label-icon">
-                  <label for="modal-date departure">
-                    Дата выезда:</label>
-                <input class="field-modal depart" type="text" id="modal-date" name="modal-date" placeholder="Укажите дату" value="1 сентября 2021">
-                <p class="modal-text"> На эти даты есть свободные номера. Пока есть.</p>
-              </p>
-              </form>
-              <p class="living">Взрослые:</p>
-              <form class="button-living adult">
-              <button class="adults minus" type="button">-</button>
-              <button class="number" type="button">2</button>
-              <button class="adults plus" type="button">+</button>
-            </form>
+              <span class="text-modal">Мы не можем отправить вас в прошлое.</span>
+              </span>
+            </label>
 
-              <p class="living-child">Дети:</p>
-              <a class="info">i
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
-            </span>
-          </a>
-              <popup class="modal-popup">
+              <p class="field-group modal-form-date">
+                <label class="form-label form-label-icon"></label>
+                  <span class="modal-date departure">
+                    Дата выезда:
+                    <span class="modal-field">
+                <input class="field-modal depart" type="text" id="modal-date" name="modal-date" placeholder="Укажите дату" value="1 сентября 2021">
+                <span class="modal-text"> На эти даты есть свободные номера. Пока есть.</span>
+               </span>
+            </label>
+              </form>
+
+              <div class="living-group">Взрослые:</div>
+              <div class="button-group-adult">
+              <button class="adults bt_minus" type="button">
+                <svg width="13" height="1" viewBox="0 0 13 1"  xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                </svg>
+              </button>
+              <input class="living-group-form" type="number" id="number-form" name="living-adult" placeholder="2" style="width:25px">
+              <button class="adults bt_plus" type="button">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                  </svg>
+              </button>
+            </div>
+
+              <div class="living-group-child">Дети:</div>
+              <div class="button-group-children">
+              <button class="child bt_minus" type="button">
+                <svg width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z"/>
+                  </svg>
+              </button>
+              <input class="living-group-form" type="number" id="form-number" name="living-child" placeholder="1" style="width:25px">
+              <button class="child bt_plus" type="button">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/>
+                  </svg>
+              </button>
+            </div>
+
+              <div class="info">i
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              <popup class="modal-info">
                 <p class="popup-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
               </popup>
-              <form class="button-living child">
-              <button class="children minus" type="button">-</button>
-              <button class="number" type="button">1</button>
-              <button class="children plus" type="button">+</button>
-            </form>
+            </div>
 
               <button class="search-modal" type="button">Найти</button>
+            </form>
           </section>
       </div>
     </div>
