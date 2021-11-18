@@ -6,7 +6,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2"), format(".woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -14,7 +14,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2"), format(".woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -78,8 +78,6 @@ body {
   min-height: 65px;
 }
 
-
-
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -106,6 +104,12 @@ body {
   display: grid;
   grid-template-columns: 71px 100px 135px 128px;
   grid-template-rows: 19px 26px 20px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0;
   width: 600px;
   height: 65px;
   margin: 0 auto;
@@ -117,16 +121,20 @@ body {
 .home {
   grid-column: 2/3;
   grid-row: 2/3;
+  left: -10px;
+  text-align: left;
 }
 
 .about {
   grid-column: 3/4;
   grid-row: 2/3;
-
+  right: 9px;
 }
+
 .hotels {
   grid-column: 4/5;
   grid-row: 2/3;
+  right: 29px;
 }
 
 .navigation-list.user {
@@ -144,7 +152,8 @@ body {
 .search-icon {
   grid-column: 2/3;
   grid-row: 2/3;
-  top: 0px;
+  top: 1px;
+  left: 33px;
 }
 
 .favorites-icon {
@@ -180,13 +189,14 @@ body {
 .enter {
   grid-column: 4/5;
   grid-row: 2/3;
+  margin-left: 60px;
 }
 
 .navigation-user.button {
   position: relative;
   background-color: #756257;
   width: 160px;
-  height: 37px;
+  min-height: 37px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -210,7 +220,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
-  text-align: center;
+  text-align: left;
   color: #000000;
   text-decoration: none;
   padding: 10px;
@@ -449,7 +459,7 @@ body {
   background-color: #83B3D3;
   background-image: url("../images/square-blue.svg");
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 1/2;
   grid-row: 1/2;
   background-repeat: no-repeat;
@@ -468,7 +478,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 1/2;
   grid-row: 2/3;
   background-repeat: no-repeat;
@@ -480,7 +490,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/square-white.svg");
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 2/3;
   grid-row: 2/3;
   background-repeat: no-repeat;
@@ -492,7 +502,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 3/4;
   grid-row: 2/3;
   background-repeat: no-repeat;
@@ -501,11 +511,11 @@ body {
 }
 
 .diablo-bridge {
-  color: #000000;
+  color: #FFFFFF;
   background-image: url("../images/square-blue.svg");
   background-color: #83B3D3;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 3/4;
   grid-row: 3/4;
   background-repeat: no-repeat;
@@ -517,7 +527,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 1/2;
   grid-row: 4/5;
   background-repeat: no-repeat;
@@ -529,7 +539,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/square-lightblue2.svg");
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   grid-column: 2/3;
   grid-row: 4/5;
   background-repeat: no-repeat;
@@ -541,6 +551,7 @@ body {
   color: #FFFFFF;
   background-image: url("../images/square-lightblue.svg");
   width: 400px;
+  min-height: 384px;
   grid-column: 3/4;
   grid-row: 4/5;
   background-repeat: no-repeat;
@@ -571,14 +582,7 @@ body {
   height: 76px;
 }
 
-.advantages-title.house,
-.advantages-title.meal,
-.advantages-title.souvenir,
-.advantages-title.place,
-.advantages-title.way,
-.advantages-title.tourer{
-  color: #000000;
-}
+
 .advantages-subtitle.town,
 .advantages-subtitle.bridgework {
   color: #FFFFFF;
@@ -601,7 +605,6 @@ body {
 
 /*Title*/
 .advantages-title {
-  color: #FFFFFF;
   width: 400px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -609,6 +612,14 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+.advantages-title.house,
+.advantages-title.meal,
+.advantages-title.souvenir,
+.advantages-title.place,
+.advantages-title.way,
+.advantages-title.tourer{
+  color: #000000;
 }
 
 /*Subtitle*/
@@ -671,7 +682,7 @@ body {
 .button.button-search {
   background-color: #756257;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -825,7 +836,7 @@ outline: none;
 .button.mailing-button {
   background-color: #83B3D3;
   width: 200px;
-  height: 60px;
+  min-height: 60px;
   position: relative;
   margin-top: 18px;
   margin-bottom: 138px;
@@ -1344,7 +1355,6 @@ right: 51px;
   width: 160px;
   border-radius: 4px;
   margin-bottom: 20px;
-
 }
 
 .button-apply:hover {
@@ -1685,7 +1695,7 @@ right: 51px;
   padding: 10px 0;
   margin-top: 63px;
   min-width: 160px;
-  height: 37px;
+  min-height: 37px;
   border: none;
 }
 
@@ -1700,6 +1710,7 @@ right: 51px;
   text-align: center;
   text-decoration: none;
   margin: auto;
+  color: #000000;
 }
 
 .product-card-title-link {
@@ -2350,7 +2361,7 @@ right: 51px;
   z-index: 1;
   top: -182px;
   right: 0;
-  width: 400px;
+  min-width: 400px;
   font-family: "PT Sans", sans-serif;
   line-height: 21px;
   color: #000000;
@@ -2477,16 +2488,6 @@ right: 51px;
   grid-column: 3/4;
 }
 
-.cart-item-button:hover {
-  fill: #000000;
-}
-
-.cart-item-button:active.cart-item-button:focus {
-  fill: #000000;
-  background-color: #FFFFFF;
-  outline: none;
-}
-
 .cart-item-button:focus{
   box-shadow: inset 0 0 0 3px #83B3D3;
   box-sizing: border-box;
@@ -2494,6 +2495,16 @@ right: 51px;
   outline: none;
 }
 
+.cart-item-button:hover {
+  fill: #000000;
+  outline: none;
+}
+
+.cart-item-button:active.cart-item-button:focus {
+  fill: #000000;
+  background-color: #FFFFFF;
+  outline: none;
+}
 
 .cart-item-button:disabled:hover {
   color: #E5E5E5;
@@ -2507,7 +2518,7 @@ right: 51px;
   z-index: 1;
   top: 234px;
   right: -170px;
-  width: 300px;
+  min-width: 300px;
   background-color: #756257;
   border-radius: 0px 0px 20px 20px;
   text-transform: uppercase;
@@ -2562,7 +2573,7 @@ right: 51px;
 }
 
 .popover-title{
-  position: absolute;
+
   top: 172px;
   margin-bottom: 0;
   margin-right: 10px;
@@ -2585,12 +2596,12 @@ right: 51px;
 
 
 .modal-container {
-  display: block;
+  display: none;
   position: relative;
   top: 0;
   left: 0;
   display: flex;
-  width: 100%;
+  min-width: 100%;
   height: 100%;
   background-color:  rgba(242, 242, 242, 0.8);
 
@@ -2686,6 +2697,7 @@ right: 51px;
   width: 420px;
   height: 50px;
   background-color: #F2F2F2;
+  opacity: 0.6;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -2985,7 +2997,7 @@ border: none;
   color:#FFFFFF;
   background-color: #83B3D3;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   margin-left: 70px;
   margin-top: 60px;
   border-radius: 10px;
