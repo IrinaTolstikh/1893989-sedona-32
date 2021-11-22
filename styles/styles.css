@@ -573,8 +573,7 @@ body {
   background-position: center;
   width: 75px;
   height: 72px;
-  margin-top: 70px;
-  padding-top: 0px;
+  margin-top: 12px;
 }
 
 .icon-food {
@@ -583,7 +582,7 @@ body {
   background-position: center;
   width: 74px;
   height: 70px;
-  margin-top: 70px;
+  margin-top: 12px;
 }
 
 .icon-souvenirs{
@@ -592,7 +591,7 @@ body {
   background-position: center;
   width: 64px;
   height: 76px;
-  margin-top: 70px;
+  margin-top: 12px;
 }
 
 
@@ -602,18 +601,29 @@ body {
 }
 
 .bridge-diablo {
-  height: 90px;
-  padding-top: -10px;
+  height: 50px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .advantages-subtitle.bridgework {
+  position: relative;
+  height: 47px;
   color: #FFFFFF;
-  padding-top: 0px;
+  top: 9px;
 }
 
-.advantages-description.city,
 .advantages-description.bridge {
   color: #FFFFFF;
+  position: relative;
+  top: 12px;
+}
+
+.mini-place,
+.roads,
+.grand-canyon {
+  position: relative;
+  top: 5px;
 }
 /*photo-advantages*/
 .photo-1 {
@@ -654,16 +664,30 @@ body {
   color: #000000;
 }
 
-.house,
-.meal,
-.souvenir {
-  margin-top: -3px;
+.house {
+padding-top: 28px;
 }
 
-.live,
-.order,
+.meal {
+  padding-top: 28px;
+}
+
+.souvenir {
+  padding-top: 26px;
+}
+
+.live {
+  position: relative;
+  top: -7px;
+}
+
+.order {
+  position: relative;
+  top: -7px;
+}
 .local {
-  margin-top: -30px;
+  position: relative;
+  top: -9px;
 }
 
 .place,
@@ -675,7 +699,8 @@ body {
 .attraction,
 .vegas-sedona,
 .canyon {
-  margin-top: 20px;
+  position: relative;
+  top: 35px;
 }
 
 /*Subtitle*/
@@ -1075,9 +1100,13 @@ outline: none;
   line-height: 26px;
   text-align: justify;
   vertical-align: top;
-  margin-top: 30px;
   margin-left: -10px;
+}
 
+.prices {
+  position: relative;
+  margin-left: 5px;
+  bottom: 35px;
 }
 
 .catalog-filter-group {
@@ -1103,8 +1132,9 @@ outline: none;
 }
 
 .housing-type {
-  margin-left: -43px;
+  margin-left: -65px;
 }
+
 .price {
   grid-column: 4/5;
   width: 90px;
@@ -1139,12 +1169,17 @@ outline: none;
 /* Mark */
 .control-mark {
   position: absolute;
-  top: -35px;
+  top: -23px;
   left: -5px;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
   border-radius: 4px;
+}
+
+.control-mark.radio {
+  position: absolute;
+  left: -60px;
 }
 
 .filter-label::after, .filter-label::before {
@@ -1246,7 +1281,24 @@ outline: none;
   vertical-align: top;
   text-transform: capitalize;
   padding-left: 15px;
+}
+.pool,
+.parking,
+.wi-fi {
+  position: absolute;
+  top: -24px;
+}
 
+.wi-fi {
+ width: 100px;
+}
+
+.hotel,
+.motels,
+.aparts {
+  position: absolute;
+  top: -24px;
+  left: -35px;
 }
 
 .catalog-filter-list {
@@ -1281,8 +1333,8 @@ outline: none;
   margin-top: -51px;
   margin-bottom: 0;
   margin-left: -115px;
-  width: 100%;
   padding-right: 15px;
+  width: 100%;
   line-height: 24px;
   box-sizing: border-box;
   border: 2px solid #FFFFFF;
@@ -1293,11 +1345,11 @@ outline: none;
   position: absolute;
   padding-right:-30px;
   margin-top: -9px;
+  margin-left: -16px;
+  margin-top: -51px;
   color: #FFFFFF;
   line-height: 24px;
   height: 48px;
-  margin-left: -16px;
-  margin-top: -51px;
   box-sizing: border-box;
   border: 2px solid #FFFFFF;
   border-radius: 4px 0 0 4px;
@@ -1344,6 +1396,7 @@ outline: none;
   padding: 0;
   border: none;
 }
+
 .catalog-filter-group.infrastructure {
   width: 200px;
   margin-left: 5px;
@@ -1438,7 +1491,7 @@ right: 51px;
   background-color: #756257;
 }
 
-.button.button-apply {
+.button-apply {
   color: #FFFFFF;
   background-color: #83B3D3;
   font-style: normal;
