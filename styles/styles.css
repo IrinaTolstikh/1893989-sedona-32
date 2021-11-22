@@ -104,7 +104,7 @@ body {
   display: grid;
   grid-template-columns: 71px 100px 135px 128px;
   grid-template-rows: 19px 26px 20px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1025,6 +1025,7 @@ outline: none;
   list-style: none;
   margin-left: 65px;
   margin-top: -8px;
+  text-decoration: none;
 }
 
 .breadcrumbs-item {
@@ -1043,6 +1044,7 @@ outline: none;
 
 .breadcrumbs-link {
   fill: #FFFFFF;
+  color: #FFFFFF;
   padding: 8px;
   text-decoration: none;
 }
@@ -1324,7 +1326,6 @@ outline: none;
   outline: none;
 }
 
-
 .catalog-filter-input.max {
   position: absolute;
   color: #FFFFFF;
@@ -1361,6 +1362,7 @@ outline: none;
   margin-top: -40px;
   opacity: 0.3;
 }
+
 .filter-max {
   position: absolute;
   margin-top: -40px;
@@ -1384,7 +1386,6 @@ outline: none;
   text-transform: lowercase;
   width: 30px;
   padding: 0 2px;
-  font: inherit;
   background-color: transparent;
   border: none;
   appearance: textfield;
@@ -1465,7 +1466,6 @@ right: 51px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  justify-content: space-between;
   color: #FFFFFF;
   padding: 19px;
   margin-bottom: 20px;
@@ -1483,7 +1483,6 @@ right: 51px;
   box-shadow: 0 0 0 2px #83B3D3;
   outline: none;
   border-radius: 4px;
-  outline: 2px solid #83B3D3;
   filter: drop-shadow (0 0 0 3 rgba(129, 179, 210, 1));
   box-sizing: border-box;
 }
@@ -1977,6 +1976,8 @@ right: 51px;
   width: 151px;
   height: 37px;
   margin-top: 13px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .product-card-button:hover {
@@ -2025,6 +2026,8 @@ right: 51px;
   height: 37px;
   margin-top: 0;
   margin-left: 2px;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
 .product-card-like:hover {
   background-color: #68A2CA;
@@ -2864,7 +2867,6 @@ right: 51px;
 
 .modal-close-button:active {
   background-color: #FFFFFF;
-  box-shadow: inset 0 0 0 3px #000000;
   outline: none;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
